@@ -6,7 +6,7 @@
   },
   "add_menu": {
     "Type_Title": "Title",
-    "Type_Data": "Date",
+    "Type_Data": "Record Date",
     "Type_Content": "Content",
     "Select_Icon": "Icon"
   },
@@ -14,9 +14,18 @@
     "todo": "Todo",
     "review": "Review"
   },
+  "Window": {
+    "CLOSING_ERROR": "Save failed because the save data or settings file may have been deleted due to some reason."
+  },
+  "CONTENT": {
+    "CONTENT_CLOSE_WARNING": "Cancelled. Data will not be saved if you continue. Are you sure?",
+    "CONTENT_FIRST": "<html><body>Calculation is based on the forgetting curve from the initial time. You can stop the timer at any time after starting.<br>However, if you close CONTENT, it will be recorded as the initial time.<br>This dialog will only be shown once and will not appear again.</body></html>",
+    "running_delete": "The timer is running. You cannot stop it."
+  },
   "ControllCenter": {
     "Add_RowData": "Add",
-    "Import_RowData": "Import"
+    "Import_RowData": "Import",
+    "OpenBrowser": "Open Browser"
   },
   "TodoDialog": {
     "OK_Button": "OK",
@@ -24,7 +33,9 @@
     "No_Button": "No"
   },
   "detail_dialog": {
-    "detail": "Detail"
+    "detail": "Detail",
+    "date": "Record Date",
+    "difficulty": "Difficulty"
   },
   "review_kinds": {
     "easy": "Easy",
@@ -32,21 +43,22 @@
     "hard": "Hard"
   },
   "Setting": {
-    "Set_SaveData_Path": "Save Data Location",
-    "Set_Lang": "Please set the language",
-    "Set_BeforeDays": "How many days back should registered data be displayed?",
-    "Set_THEME": "You can set the theme"
-
+    "Set_SaveData_Path": "Save Data Path",
+    "Set_Lang": "Please select a language",
+    "Set_BeforeDays": "How many days back should the registered data be displayed?",
+    "Set_THEME": "You can set the theme",
+    "Restart": "Please restart after changing settings.",
+    "DisplayDays": "Display Days"
   },
   "toolbar": {
     "export": "Save As",
     "save": "Save"
   },
   "export": {
-    "exist_file": "File already exists. Do you want to overwrite it?"
+    "exist_file": "The file already exists. Do you want to overwrite it?"
   },
   "loading": {
-    "file_warning": "<html><body>Save data not found. Would you like to create it?<br>It will be saved to the following location:<br>The Forwoth folder will also contain configuration files.<br>If you cancel here, all data will not be saved.<br></body></html>",
+    "file_warning": "<html><body>Settings file not found. It will be created. Is that okay?<br>The file will be saved to the following location.<br>The Forwoth folder will include save files and other data.<br>If you cancel here, no data will be saved.<br></body></html>",
     "unexpected_error": "An unexpected error may have occurred while creating the file."
   }
 }

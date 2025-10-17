@@ -63,12 +63,9 @@ public class ContentPanel extends DialogBase implements ModalCallback {
             if (timePanel.getTotalTime() > 0){
                 ModalDialog.showModal(this, new SimpleModalBorder(new JLabel(lang.get("CONTENT_CLOSE_WARNING").asString()), "", new SimpleModalBorder.Option[]{
                         new SimpleModalBorder.Option("保存する",SimpleModalBorder.YES_OPTION),new SimpleModalBorder.Option("キャンセル",SimpleModalBorder.NO_OPTION)
-                }, new ModalCallback() {
-                    @Override
-                    public void action(ModalController controller, int action) {
-                        if (action == SimpleModalBorder.NO_OPTION){
-                            action_ok();
-                        }
+                }, (controller1, action1) -> {
+                    if (action1 == SimpleModalBorder.YES_OPTION){
+                        action_ok();
                     }
                 }));
             }
