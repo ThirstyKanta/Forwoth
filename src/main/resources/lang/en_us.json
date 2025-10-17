@@ -1,0 +1,52 @@
+{
+  "Menu": {
+    "Update_Name": "Change Name",
+    "Update_Review": "Change Review",
+    "Remove_Item": "Remove Item"
+  },
+  "add_menu": {
+    "Type_Title": "Title",
+    "Type_Data": "Date",
+    "Type_Content": "Content",
+    "Select_Icon": "Icon"
+  },
+  "Column_Name": {
+    "todo": "Todo",
+    "review": "Review"
+  },
+  "ControllCenter": {
+    "Add_RowData": "Add",
+    "Import_RowData": "Import"
+  },
+  "TodoDialog": {
+    "OK_Button": "OK",
+    "Cancel_Button": "Cancel",
+    "No_Button": "No"
+  },
+  "detail_dialog": {
+    "detail": "Detail"
+  },
+  "review_kinds": {
+    "easy": "Easy",
+    "normal": "Normal",
+    "hard": "Hard"
+  },
+  "Setting": {
+    "Set_SaveData_Path": "Save Data Location",
+    "Set_Lang": "Please set the language",
+    "Set_BeforeDays": "How many days back should registered data be displayed?",
+    "Set_THEME": "You can set the theme"
+
+  },
+  "toolbar": {
+    "export": "Save As",
+    "save": "Save"
+  },
+  "export": {
+    "exist_file": "File already exists. Do you want to overwrite it?"
+  },
+  "loading": {
+    "file_warning": "<html><body>Save data not found. Would you like to create it?<br>It will be saved to the following location:<br>The Forwoth folder will also contain configuration files.<br>If you cancel here, all data will not be saved.<br></body></html>",
+    "unexpected_error": "An unexpected error may have occurred while creating the file."
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "Menu": {
+    "Update_Name": "名前を変更",
+    "Update_Review": "評価を変更",
+    "Remove_Item": "要素を削除"
+  },
+  "add_menu": {
+    "Type_Title": "タイトル",
+    "Type_Data": "記録日時",
+    "Type_Content": "内容",
+    "Select_Icon": "アイコン"
+  },
+  "Column_Name": {
+    "todo": "Todo",
+    "review": "復習"
+  },
+  "Window": {
+    "CLOSING_ERROR": "何らかが原因でセーブデータまたは設定ファイルが消えている可能性があるため、保存できませんでした。"
+  },
+  "CONTENT": {
+    "CONTENT_CLOSE_WARNING": "キャンセルされました。このままだとデータは保存されません。よろしいですか？",
+    "CONTENT_FIRST": "<html><body>最初の時間で忘却曲線を元に計算されます。タイマー開始した後、いつストップしても構いません。<br>ただしCONTENTを閉じてしまうと最初の時間として記録されます。<br>このダイアログは一回表示されると二度と表示されません。</body></html>",
+    "running_delete": "タイマーが再生されています。終了することはできません"
+  },
+    "ControllCenter": {
+        "Add_RowData": "追加",
+        "Import_RowData": "インポート",
+      "OpenBrowser": "ブラウザー"
+    },
+    "TodoDialog": {
+        "OK_Button": "OK",
+        "Cancel_Button": "Cancel",
+        "No_Button": "No"
+    },
+    "detail_dialog": {
+        "detail": "詳細",
+        "date": "記録日時",
+      "difficulty": "難しさ"
+    },
+
+  "review_kinds": {
+    "easy": "簡単",
+    "normal": "普通",
+    "hard": "難しい"
+
+  },
+  "Setting": {
+    "Set_SaveData_Path": "セーブデータの保存先",
+    "Set_Lang":"言語を設定してください",
+    "Set_BeforeDays": "登録されたデータを何日前から表示しますか？",
+    "Set_THEME":"テーマを設定できます",
+    "Restart": "設定を変更した際は再起動してください。",
+    "DisplayDays": "表示日数"
+
+  },
+  "toolbar": {
+    "export":"名前を付けて保存",
+    "save": "保存"
+
+  },
+  "export": {
+    "exist_file": "すでにファイルが存在してます。上書きをしますか？"
+  },
+  "loading": {
+    "file_warning": "<html><body>設定ファイルを見つけられないため作成します。よろしいですか？<br>以下のファイル先に保存されます。<br>この先、Forwothのフォルダーにセーブファイルなども含まれることになります。<br>ここでキャンセルをするとすべてのデータは保存されません。<br></body></html>",
+    "unexpected_error":"ファイル作成時に、何らかの不具合が発生した可能性があります。"
+  }
+}

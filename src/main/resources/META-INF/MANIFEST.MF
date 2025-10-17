@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Main-Class: com.kanta.Main
+Class-Path: flatlaf-fonts-roboto-2.137.jar jsvg-2.0.0.jar swing-color-pi
+ cker-1.0.0.jar commons-io-2.20.0.jar flatlaf-3.6.1.jar miglayout-swing-
+ 11.4.2.jar flatlaf-extras-3.6.1.jar miglayout-core-11.4.2.jar jackson-d
+ atabind-3.0.0.jar jackson-core-3.0.0.jar swing-datetime-picker-2.1.3.ja
+ r jackson-annotations-3.0-rc5.jar modal-dialog-2.5.2.jar
+
