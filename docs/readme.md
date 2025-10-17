@@ -1,18 +1,9 @@
 
 
 <picture>
-<<<<<<<< HEAD:docs/readme.md
-
- <source media=(prefers-color-scheme: dark) srcset=header/Header.svg>
-
- <source media=(prefers-color-scheme: light) srcset="header/Header.svg">
- <img alt=Forwoth src=header/Header.svg>
-
-========
  <source media="(prefers-color-scheme: dark)" srcset="header/HeaderForDark.svg">
  <source media="(prefers-color-scheme: light)" srcset="header/Header.svg">
  <img alt="YOUR-ALT-TEXT" src="header/Header.svg">
->>>>>>>> 95ed89a2bfea2347322b7e6b0686026dc586216a:docs/Readme.md
 </picture>
 
 # Forwoth
@@ -114,46 +105,6 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 登録できる内容は「タイトル、アイコン、記録日時、記録時間、内容」となっております。
 登録画面はこのようになっています。
 
-<<<<<<<< HEAD:docs/readme.md
-<img src="images/sample3.png" width="50%" height="30%">
-<a href="https://github.com/DJ-Raven/swing-datetime-picker"><img src="images/Calender.png" width="40%"></a><a href="https://github.com/DJ-Raven/swing-color-picker"><img src="images/ColorPicker.png" alt="colorpicker" width="40%"></a><a href="https://github.com/DJ-Raven/swing-datetime-picker">
-<img src="images/TimePicker.png" alt="timepicker" width="30%">
-</a>
-
-
-**Add ToDoダイログ**のOKを選択すると内容がテーブルに反映されます。
-![sample4](images/sample4.png)
-
----
-
-次は**インポート**を説明します。
-これは文字通り、セーブデータと同じ形式（ソフトバージョンが一致していないと不具合を起こす可能性があります。）記録されたJSONファイルをインポートできます。
->[!IMPORTANT]
->現時点ではインポートは保存された設定以外のデータをすべて上書きします。
->設定ファイルはインポートでは追加できません。
-
----
-次は**カレンダーのアイコン**のボタンを説明します。
-これは、すべての登録されたデータがすべて閲覧できます。
-後ほど説明しますが、テーブルには表示日数というものがあり
-その日数を超えるとテーブルから見えなくなります。
-なので表示日数に関係なく閲覧できるブラウザーの役割を担っています。
-
->[!IMPORTANT]
->現時点ではブラウザーは閲覧する機能しか持ち合わせていません。
-
-### THIRD
-次はテーブルについて説明します。
-
-![sample4](images/sample4.png)
-
-まず左は登録したタイトル名と、復習欄はあと何日後に復習するかを表示ししています。
-
-要素の上にカーソルを置いて右クリックをすると
-「削除、名前の変更」のアクションを行えます。
-
-
-========
 <table>
  <tr>
   <td><img src="images/sample3.png"></td>
@@ -195,7 +146,6 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 「削除、名前の変更」のアクションを行えます。
 
 
->>>>>>>> 95ed89a2bfea2347322b7e6b0686026dc586216a:docs/Readme.md
 >[!IMPORTANT]
 >現時点ではそれぞれのアクション後に警告などは表示されません。
 >今後実装予定です。
