@@ -3,7 +3,7 @@
 <picture>
  <source media="(prefers-color-scheme: dark)" srcset="header/HeaderForDark.svg">
  <source media="(prefers-color-scheme: light)" srcset="header/Header.svg">
- <img alt="YOUR-ALT-TEXT" src="header/Header.svg">
+ <img alt="header" src="header/Header.svg">
 </picture>
 
 # Forwoth
