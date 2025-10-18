@@ -13,6 +13,7 @@ import javax.swing.*;
 
 import com.formdev.flatlaf.FlatClientProperties;
 import com.formdev.flatlaf.extras.FlatSVGIcon;
+import com.kanta.components.timer.utils.MyTimeUtils;
 import com.kanta.rowdata.RowData;
 
 import com.kanta.rowdata.RowDataManager;
@@ -82,16 +83,26 @@ public class TodoContent extends DialogBase{
         JLabel detailLabel = new JLabel(lang.get("detail").asString());
         JLabel dataLabel = new JLabel(lang.get("date").asString());
         JLabel difficultyLabel = new JLabel(lang.get("difficulty").asString());
+        JLabel totalTimeLabel = new JLabel(lang.get("TotalTime").asString());
+        long elapsedTotal = targetRowData_arr.get(0).getTotalTime() / 1000;
+        long hour = elapsedTotal / 3600;
+        long minute = (elapsedTotal / 60) % 60;
+        long second = (elapsedTotal % 60);
+        JLabel totalTime = new JLabel(String.format(lang.get("time").asString(),hour,minute,second));
         detailLabel.putClientProperty(FlatClientProperties.STYLE,"font:15,bold");
 
         add(title,"growx,wrap,w ::50%, h 20::");
+
         add(detailLabel, "wrap,growx,h 20::");
-        add(contentPane, "span,grow,align left,wrap, h 40%!");
+        add(contentPane, "span,grow,align left,wrap, h 30%!");
         add(dataLabel,"wrap,grow,h 30::");
         add(textFieldDate,"growx,w 50%,h 30::");
         add(textFieldTime,"growx, w 50%,h 20::,wrap");
+        add(totalTimeLabel,"wrap");
+        add(totalTime, "wrap");
         add(difficultyLabel, "growx,wrap");
         add(reviewPanel,"span,grow,wrap,h 30::");
+
 
 
 

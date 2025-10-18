@@ -35,7 +35,9 @@
     "detail_dialog": {
         "detail": "詳細",
         "date": "記録日時",
-      "difficulty": "難しさ"
+      "difficulty": "難しさ",
+      "TotalTime": "合計時間",
+      "time":"%02d時間%02d分%02d秒"
     },
 
   "review_kinds": {

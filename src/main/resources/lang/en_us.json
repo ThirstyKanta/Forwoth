@@ -35,7 +35,9 @@
   "detail_dialog": {
     "detail": "Detail",
     "date": "Record Date",
-    "difficulty": "Difficulty"
+    "difficulty": "Difficulty",
+    "TotalTime": "Total Time",
+    "time":"%02d hours %02d minutes %02d seconds"
   },
   "review_kinds": {
     "easy": "Easy",

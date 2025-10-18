@@ -51,6 +51,27 @@ public class TodoTable extends JScrollPane implements MouseListener {
 
     }
 
+    public void tableCheck(){
+        RowData[] wait_rowDatas = new RowData[RowDataManager.getInstance().getWaitRowDataList().size()];
+        RowData[] rowDatas = new RowData[RowDataManager.getModel().getRowList().size()];
+
+        RowDataManager.getModel().getRowList().toArray(rowDatas);
+        RowDataManager.getInstance().getWaitRowDataList().toArray(wait_rowDatas);
+        beforeDays = SettingManager.getInstance().getBeforeDays();
+
+
+        for (RowData r: wait_rowDatas){
+            if (r.getInterval() <= beforeDays) {
+                RowDataManager.getInstance().moveToRowData(r);
+            }
+        }
+        for (RowData r: rowDatas){
+            if (r.getInterval() > beforeDays) {
+                RowDataManager.getInstance().moveToFinishData(r);
+            }
+        }
+    }
+
     private void table_init() {
         if (todoJTable != null) {
             //ui

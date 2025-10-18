@@ -126,11 +126,13 @@ public class SettingP extends JPanel implements ModalCallback {
 
 
             }
-
+            if ((int) daysbox.getSelectedItem() != SettingManager.getInstance().getBeforeDays()){
+                SettingManager.getInstance().setBeforeDays((int) daysbox.getSelectedItem());
+            }
 
             SettingManager.getInstance().setLang(lang);
 
-            SettingManager.getInstance().setBeforeDays((int) daysbox.getSelectedItem());
+
 
             DataFileManager.getInstance().saveSetting();
 
