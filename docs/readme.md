@@ -226,10 +226,8 @@ cd Forwoth
 
 2.Javaの「[Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)」アドオンをダウンロード後、してください。
 
-3.このボタンを押すことで、リポジトリをクローン出来ます。
-
-[![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://open.vscode.dev/https://github.com/ThirstyKanta/Forwoth)
-
+3.クローンを行った後、そのフォルダーを開くことでJava Extension Packによって自動で
+ビルドできます。
 
 ## Used Materials
 
