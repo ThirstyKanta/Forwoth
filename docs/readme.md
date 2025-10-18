@@ -55,7 +55,7 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 
 ## Installation
 
-[Release](#release-demo)から最新のJarファイルをダウンロードしてください。
+[Release](Releases/#release-demo)から最新のJarファイルをダウンロードしてください。
 > [!IMPORTANT]
 >Javaをダウンロードし、インストールしてください。
 >VersionはVersion 17 以降のものを使用してください。[Java Version 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html),[Java Version Latest](https://www.oracle.com/jp/java/technologies/downloads/)
