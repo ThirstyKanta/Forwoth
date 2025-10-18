@@ -1,42 +1,31 @@
-# ==========================
-# Java / Maven 用 GitIgnore
-# ==========================
 
-# --- ビルド成果物 ---
+Forwoth/*.json
+
 target/
 *.class
 *.jar
 *.war
 *.ear
 
-# --- IDE 設定ファイル ---
-# IntelliJ IDEA
 .idea/
 *.iml
 *.iws
 
-# VS Code
 .vscode/
 
-# Eclipse
 .project
 .classpath
 .settings/
 
-# --- OS 一時ファイル ---
 .DS_Store
 Thumbs.db
 
-# --- ログ / 一時出力 ---
 *.log
 *.tmp
 
-# --- 環境依存の設定ファイル（必要に応じて） ---
 *.env
 *.local.properties
 
-# --- その他不要なもの ---
-# 自動生成・バックアップファイル
 *~
 *.swp
 *.bak
