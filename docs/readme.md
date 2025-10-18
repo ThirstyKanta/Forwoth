@@ -28,7 +28,7 @@
   - [Features](#features)
   - [How to USE](#how-to-use)
     - [FIRST](#first)
-    - [Second](#second)
+    - [SECOND](#second)
     - [THIRD](#third)
     - [FOUTH](#fouth)
   - [How to Build](#how-to-build)
@@ -138,7 +138,7 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 ### THIRD
 次はテーブルについて説明します。
 
-![sample4](images/sample4.png)
+<img src="images/sample4.png" alt="sample4" widht="50%">
 
 まず左は登録したタイトル名と、復習欄はあと何日後に復習するかを表示ししています。
 
@@ -152,7 +152,7 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 
 
 同じように要素の上でダブルクリックを行うと「タイトル、内容、記録日時」の閲覧とタイマーが表示されます。
-![sample5](images/sample5.png)
+<img src="images/sample5.png" alt="sample5" width="50%">
 
 右の面、記録日時の下の**難しさ**があります。
 ここで体感的な難易度のことを指します。
@@ -166,7 +166,7 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 上部のメニューバーについて
 説明します。
 
-![sample6](images/sample6.png)
+<img src="images/sample6.png" alt="sample6" width="50%" height="50%">
 
 
 この二つの項目ですが、
@@ -177,12 +177,11 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 ---
 **Tools**では、現在、Settingのみ選択でき、「保存先、言語、テーマ、表示日数」が選択できます。
 
-![Setting](images/Setting.png)
+<img src="images/Setting.png" alt="setting" width="50%">
 
 
 
-![THEME-WHITE](images/DarkTheme.png)
-![THEME-DARK](images/WhiteTheme.png)
+<img src="images/DarkTheme.png" alt="darktheme" width="50%"><img src="images/WhiteTheme.png" alt="whiteTheme" width="50%">
 
 
 ---
