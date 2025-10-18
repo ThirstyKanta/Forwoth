@@ -51,7 +51,7 @@ public class BottomControllCenter extends JPanel implements ActionListener{
         importRowData.setActionCommand("import");
 
         openBrowser.addActionListener(this);
-        FlatSVGIcon icon = new FlatSVGIcon("image\\icons\\calender.svg",20,20);
+        FlatSVGIcon icon = new FlatSVGIcon("image/icons/calender.svg",20,20);
         openBrowser.setIcon(icon);
         openBrowser.setContentAreaFilled(false);
         openBrowser.setActionCommand("openbrowser");

@@ -1,0 +1,18 @@
+{
+  "@class" : "com.kanta.rowdata.file.DataWrapper",
+  "RowList" : [ {
+    "@class" : "com.kanta.rowdata.RowData",
+    "Initial_Time" : 12181,
+    "LocalTime" : "21:22:00",
+    "Next-Schedule" : "2025-10-21",
+    "Recorded-Date" : "2025-10-18",
+    "Total_Time" : 12181,
+    "content" : "",
+    "iconColor" : [ 181, 40, 40, 255 ],
+    "interval" : 3,
+    "name" : "",
+    "previous_day" : 3.0,
+    "svgIcon" : "images/selectable_icons/panorama-solid-full.svg"
+  } ],
+  "Wait-RowList" : [ ]
+}

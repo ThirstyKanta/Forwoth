@@ -12,21 +12,33 @@ import java.net.URL;
 @SuppressWarnings("ALL")
 public class IconJCombox extends JComboBox {
 
-    URL imagesUrl = getClass().getResource("/images/selectable_icons/");
+    String[] icons = {
+            "bullhorn-solid-full.svg",
+            "calculator-solid-full.svg",
+            "ellipsis.svg",
+            "folder_close.svg",
+            "folder_open.svg",
+            "font-awesome-solid-full.svg",
+            "house-solid-full.svg",
+            "key-solid-full.svg",
+            "panorama-solid-full.svg",
+            "person-falling-burst-solid-full.svg",
+            "scroll-solid-full.svg",
+            "table-list-solid-full.svg",
+            "wifi-solid-full.svg"
+    };
+
     private DefaultComboBoxModel model = new DefaultComboBoxModel();
-    File[] images = new File(imagesUrl.getPath()).listFiles((dir, name) -> {
-        if (FilenameUtils.getExtension(name).equals("svg")){
-            return true;
-    }
-    return false;
-    });
+
+
+
     public IconJCombox(){
+
+
         setModel(model);
-
-
         setPreferredSize(new Dimension(100,50));
-        for (File image : images) {
-            FlatSVGIcon icon = new FlatSVGIcon("images/selectable_icons/" + image.getName(), 20, 20);
+        for (String icons : icons) {
+            FlatSVGIcon icon = new FlatSVGIcon("images/selectable_icons/" + icons, 20, 20);
             model.addElement(icon);
         }
 

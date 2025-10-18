@@ -35,7 +35,10 @@ public class SettingP extends JPanel implements ModalCallback {
     private final JComboBox langBox = new JComboBox();
 
     private String langSetting = SettingManager.getInstance().getLang();
-    private File files[] = new File(getClass().getResource("/lang").getPath()).listFiles();
+    private String langFiles[] = {
+      "en_us.json","ja_jp.json"
+    };
+
     private JLabel restart = new JLabel(lang.get("Restart").asString());
 
     //demo
@@ -60,12 +63,12 @@ public class SettingP extends JPanel implements ModalCallback {
 
 
 
+        for (String lang : langFiles){
+            langBoxModel.addElement(lang.replace(".json",""));
 
-        langBoxModel.setSelectedItem(langSetting);
-        langBox.setModel(langBoxModel);
-        for (File f : files){
-            langBoxModel.addElement(f.getName().replace(".json",""));
         }
+        langBox.setModel(langBoxModel);
+        langBoxModel.setSelectedItem(langSetting);
 
 
         themeBox.setModel(themeModel);
