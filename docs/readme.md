@@ -55,7 +55,7 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 
 ## Installation
 
-[Release](https://github.com/ThirstyKanta/Forwoth/releases/tag/release-demo)から最新のJarファイルをダウンロードしてください。
+[Release](https://github.com/ThirstyKanta/Forwoth/releases/tag/%23release-demo)から最新のJarファイルをダウンロードしてください。
 > [!IMPORTANT]
 >Javaをダウンロードし、インストールしてください。
 >VersionはVersion 17 以降のものを使用してください。[Java Version 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html),[Java Version Latest](https://www.oracle.com/jp/java/technologies/downloads/)
@@ -92,7 +92,7 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 ![sample1](images/sample.png)
 
 もし余計なファイル作成したくない、サンプルを見てみたいという場合は、
-[Release]()のサンプルデータ付きを選んでいただくと余計なファイルをデスクに残さず作成できます。
+[Release](https://github.com/ThirstyKanta/Forwoth/releases/tag/%23release-demo)のサンプルデータ付きを選んでいただくと余計なファイルをデスクに残さず作成できます。
 
 ### Second
 次に本体の基本的な機能から説明していきます。
