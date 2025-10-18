@@ -1,8 +1,0 @@
-{
-  "@class" : "com.kanta.setting.SettingManager",
-  "before-days" : 5,
-  "displayFlags" : true,
-  "lang" : "ja_jp",
-  "savedata_url" : "Forwoth\\data\\SaveData.json",
-  "theme" : "Dark"
-}
