@@ -5,6 +5,7 @@
 
 package com.kanta.rowdata;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -35,6 +36,10 @@ public class RowData {
     private String svgIconFileName = null;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private int[] iconColor = null;
+
+    @JsonIgnore
+    private long todayTotal;
+
     @JsonProperty("Total_Time")
     private long totalTime;
     @JsonProperty("Initial_Time")
@@ -80,11 +85,19 @@ public class RowData {
 
     public void setTotalTime(long totalTime) {
         if (initialTime <= 0) initialTime = totalTime;
-        this.totalTime = totalTime;
+        this.totalTime += totalTime;
     }
 
     public void setInitialTime(long initialTime) {
         this.initialTime = initialTime;
+    }
+
+    public void setTodayTotal(long todayTotal) {
+        this.todayTotal = todayTotal;
+    }
+
+    public long getTodayTotal() {
+        return todayTotal;
     }
 
     public long getTotalTime() {

@@ -1,9 +1,16 @@
 
 
 <picture>
+
+ <source media=(prefers-color-scheme: dark) srcset=header/Header.svg>
+
+ <source media=(prefers-color-scheme: light) srcset="header/Header.svg">
+ <img alt=Forwoth src=header/Header.svg>
+
+========
  <source media="(prefers-color-scheme: dark)" srcset="header/HeaderForDark.svg">
  <source media="(prefers-color-scheme: light)" srcset="header/Header.svg">
- <img alt="header" src="header/Header.svg">
+ <img alt="YOUR-ALT-TEXT" src="header/Header.svg">
 </picture>
 
 # Forwoth
@@ -28,7 +35,7 @@
   - [Features](#features)
   - [How to USE](#how-to-use)
     - [FIRST](#first)
-    - [SECOND](#second)
+    - [Second](#second)
     - [THIRD](#third)
     - [FOUTH](#fouth)
   - [How to Build](#how-to-build)
@@ -94,21 +101,57 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 もし余計なファイル作成したくない、サンプルを見てみたいという場合は、
 [Release]()のサンプルデータ付きを選んでいただくと余計なファイルをデスクに残さず作成できます。
 
->[!NOTE]
->現在はWIP版のため万が一を備えてサンプルデータ付きのみを配付しています。
-
-### SECOND
+### Second
 次に本体の基本的な機能から説明していきます。
 全体図は以下の画像のようになっています。
 
-<img src="images/sample2.png" alt="sample2" width="80%">
-
+![sample2](images/sample2.png)
 
 まず、下のボタンから説明します。
 下のボタンの**追加**は、真ん中のTodoという場所に自分が学習したいことを登録します。
 登録できる内容は「タイトル、アイコン、記録日時、記録時間、内容」となっております。
 登録画面はこのようになっています。
 
+<<<<<<<< HEAD:docs/readme.md
+<img src="images/sample3.png" width="50%" height="30%">
+<a href="https://github.com/DJ-Raven/swing-datetime-picker"><img src="images/Calender.png" width="40%"></a><a href="https://github.com/DJ-Raven/swing-color-picker"><img src="images/ColorPicker.png" alt="colorpicker" width="40%"></a><a href="https://github.com/DJ-Raven/swing-datetime-picker">
+<img src="images/TimePicker.png" alt="timepicker" width="30%">
+</a>
+
+
+**Add ToDoダイログ**のOKを選択すると内容がテーブルに反映されます。
+![sample4](images/sample4.png)
+
+---
+
+次は**インポート**を説明します。
+これは文字通り、セーブデータと同じ形式（ソフトバージョンが一致していないと不具合を起こす可能性があります。）記録されたJSONファイルをインポートできます。
+>[!IMPORTANT]
+>現時点ではインポートは保存された設定以外のデータをすべて上書きします。
+>設定ファイルはインポートでは追加できません。
+
+---
+次は**カレンダーのアイコン**のボタンを説明します。
+これは、すべての登録されたデータがすべて閲覧できます。
+後ほど説明しますが、テーブルには表示日数というものがあり
+その日数を超えるとテーブルから見えなくなります。
+なので表示日数に関係なく閲覧できるブラウザーの役割を担っています。
+
+>[!IMPORTANT]
+>現時点ではブラウザーは閲覧する機能しか持ち合わせていません。
+
+### THIRD
+次はテーブルについて説明します。
+
+![sample4](images/sample4.png)
+
+まず左は登録したタイトル名と、復習欄はあと何日後に復習するかを表示ししています。
+
+要素の上にカーソルを置いて右クリックをすると
+「削除、名前の変更」のアクションを行えます。
+
+
+========
 <table>
  <tr>
   <td><img src="images/sample3.png"></td>
@@ -142,7 +185,7 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 ### THIRD
 次はテーブルについて説明します。
 
-<img src="images/sample4.png" alt="sample4" widht="50%">
+![sample4](images/sample4.png)
 
 まず左は登録したタイトル名と、復習欄はあと何日後に復習するかを表示ししています。
 
@@ -150,13 +193,14 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 「削除、名前の変更」のアクションを行えます。
 
 
+>>>>>>>> 95ed89a2bfea2347322b7e6b0686026dc586216a:docs/Readme.md
 >[!IMPORTANT]
 >現時点ではそれぞれのアクション後に警告などは表示されません。
 >今後実装予定です。
 
 
 同じように要素の上でダブルクリックを行うと「タイトル、内容、記録日時」の閲覧とタイマーが表示されます。
-<img src="images/sample5.png" alt="sample5" width="50%">
+![sample5](images/sample5.png)
 
 右の面、記録日時の下の**難しさ**があります。
 ここで体感的な難易度のことを指します。
@@ -170,7 +214,7 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 上部のメニューバーについて
 説明します。
 
-<img src="images/sample6.png" alt="sample6" width="50%" height="50%">
+![sample6](images/sample6.png)
 
 
 この二つの項目ですが、
@@ -181,11 +225,12 @@ ForWothは勉強の**内容**・**日付**・**時間**を記録し、あなた�
 ---
 **Tools**では、現在、Settingのみ選択でき、「保存先、言語、テーマ、表示日数」が選択できます。
 
-<img src="images/Setting.png" alt="setting" width="50%">
+![Setting](images/Setting.png)
 
 
 
-<img src="images/DarkTheme.png" alt="darktheme" width="50%"><img src="images/WhiteTheme.png" alt="whiteTheme" width="50%">
+![THEME-WHITE](images/DarkTheme.png)
+![THEME-DARK](images/WhiteTheme.png)
 
 
 ---

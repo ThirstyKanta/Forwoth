@@ -9,8 +9,9 @@ public class ForgettingCurveUtils {
     public static float getCalReview(EnumReview review, RowData rowData) {
         for (EnumReview temp_review : EnumReview.values()) {
             if (review == temp_review) {
-                float savingRate = rowData.getInitialTime() != 0 ? (float) rowData.getTotalTime() / rowData.getInitialTime() : 0.3F ;
-                System.out.println(String.format("%s / %s = %s", rowData.getTotalTime(),rowData.getInitialTime(),savingRate ));
+
+                float savingRate = rowData.getInitialTime() != 0 ? (float) rowData.getTodayTotal() / rowData.getInitialTime() : 0.3F ;
+                System.out.println(String.format("%s / %s = %s", rowData.getTodayTotal(),rowData.getInitialTime(),savingRate ));
                 if (rowData.getPrevious_day() <= 0 ) rowData.setPreviousDay(1);
                 float days =  (rowData.getPrevious_day() * ((float) 1 / savingRate) * review.difficulty);
                 System.out.println(String.format("%s * %s * %s", rowData.getPrevious_day(),((float) 1/ savingRate),review.difficulty));

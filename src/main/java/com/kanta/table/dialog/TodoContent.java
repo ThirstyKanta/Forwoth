@@ -85,10 +85,19 @@ public class TodoContent extends DialogBase{
         JLabel difficultyLabel = new JLabel(lang.get("difficulty").asString());
         JLabel totalTimeLabel = new JLabel(lang.get("TotalTime").asString());
         long elapsedTotal = targetRowData_arr.get(0).getTotalTime() / 1000;
-        long hour = elapsedTotal / 3600;
-        long minute = (elapsedTotal / 60) % 60;
-        long second = (elapsedTotal % 60);
-        JLabel totalTime = new JLabel(String.format(lang.get("time").asString(),hour,minute,second));
+        long totalHour = elapsedTotal / 3600;
+        long totalMinute = (elapsedTotal / 60) % 60;
+        long totalSecond = (elapsedTotal % 60);
+
+        long elapsedInitTime = targetRowData_arr.get(0).getInitialTime() / 1000;
+        long initHour = elapsedInitTime / 3600;
+        long initMinute = (elapsedInitTime / 60) % 60;
+        long initSecond = (elapsedInitTime % 60);
+
+
+        JLabel totalTime = new JLabel(String.format(lang.get("time").asString(),totalMinute,totalMinute,totalSecond));
+        JLabel initTimeLabel = new JLabel(lang.get("InitTime").asString());
+        JLabel initTime = new JLabel(String.format(lang.get("time").asString(),initHour,initMinute,initSecond));
         detailLabel.putClientProperty(FlatClientProperties.STYLE,"font:15,bold");
 
         add(title,"growx,wrap,w ::50%, h 20::");
@@ -98,8 +107,10 @@ public class TodoContent extends DialogBase{
         add(dataLabel,"wrap,grow,h 30::");
         add(textFieldDate,"growx,w 50%,h 30::");
         add(textFieldTime,"growx, w 50%,h 20::,wrap");
-        add(totalTimeLabel,"wrap");
-        add(totalTime, "wrap");
+        add(totalTimeLabel,"");
+        add(initTimeLabel,"wrap");
+        add(totalTime, "");
+        add(initTime, "wrap");
         add(difficultyLabel, "growx,wrap");
         add(reviewPanel,"span,grow,wrap,h 30::");
 

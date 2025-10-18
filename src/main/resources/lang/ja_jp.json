@@ -37,6 +37,7 @@
         "date": "記録日時",
       "difficulty": "難しさ",
       "TotalTime": "合計時間",
+      "InitTime": "最初の集中時間",
       "time":"%02d時間%02d分%02d秒"
     },
 

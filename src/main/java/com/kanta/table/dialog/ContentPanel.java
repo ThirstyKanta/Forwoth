@@ -103,6 +103,7 @@ public class ContentPanel extends DialogBase implements ModalCallback {
         if (rowData != null) {
             EnumReview selected = (EnumReview) todoContent.getReviewPanel().getComboBox().getSelectedItem();
             rowData.setTotalTime(timePanel.getTotalTime());
+            rowData.setTodayTotal(timePanel.getTotalTime());
             int days = (int) Math.floor(ForgettingCurveUtils.getCalReview(selected, rowData));
             LocalDate localDate = LocalDate.now().plusDays(days + targetRowData_arr.get(0).getInterval());
             System.out.println(localDate);
